@@ -25,20 +25,20 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  background-color: #77A8BB; /* Changed to requested blue shade */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
+  padding-top: 60px; /* Adjust if banner height changes */
 }
 
-/* Add a slight shadow and rounded corners to each section for depth */
-section {
-  background: #fff; /* White background for sections */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
-  margin: 24px 10px; /* Space between sections */
-  padding: 24px 16px;
+/* Remove all section styles so only the background color shows */
+section,
+.hero,
+.story,
+.call-to-action {
+  display: none;
 }
 
 /* Hero Section Styles */
@@ -93,7 +93,7 @@ h2 {
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
+  background-color: #fff; /* Changed from yellow to white */
   color: #222;
   text-align: center;
   padding: 30px 20px;
@@ -110,19 +110,7 @@ h2 {
 
 /* Donate Button Styles */
 .donate-button {
-  display: inline-block;
-  background-color: #4FCB53; /* Green */
-  color: #fff;
-  padding: 14px 32px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-top: 18px;
-  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
-  transition: background 0.3s, transform 0.2s;
-  border: none;
-  cursor: pointer;
+  display: none; /* Hide the donate button */
 }
 
 /* Change button color when hovered */
@@ -134,6 +122,22 @@ h2 {
 /* Add some spacing between sections */
 section {
   margin-bottom: 20px;
+}
+
+/* Add a simple white banner at the top of the page */
+.top-banner {
+  background: #fff;           /* White background */
+  width: 100%;                /* Full width */
+  padding: 20px 0;            /* Space above and below */
+  text-align: center;         /* Center the text */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow for depth */
+  font-size: 1.2em;           /* Slightly larger text */
+  font-weight: bold;          /* Bold text */
+  color: #222;                /* Dark text for contrast */
+  position: fixed;            /* Stay at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;              /* Make sure it stays above other content */
 }
 
 /* 
