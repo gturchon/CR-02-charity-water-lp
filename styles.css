@@ -126,18 +126,93 @@ section {
 
 /* Add a simple white banner at the top of the page */
 .top-banner {
-  background: #fff;           /* White background */
-  width: 100%;                /* Full width */
-  padding: 20px 0;            /* Space above and below */
-  text-align: center;         /* Center the text */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow for depth */
-  font-size: 1.2em;           /* Slightly larger text */
-  font-weight: bold;          /* Bold text */
-  color: #222;                /* Dark text for contrast */
-  position: fixed;            /* Stay at the top */
+  background: #fff;
+  width: 100%;
+  padding: 10px 0;
+  /* Align text to the left side */
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 1.6em; /* Made the banner text bigger */
+  font-weight: bold;
+  color: #222;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;              /* Make sure it stays above other content */
+  z-index: 1000;
+  /* Add some space from the left edge for the text */
+  padding-left: 24px;
+  font-family: 'Proxima Nova', Arial, sans-serif; /* Use Proxima Nova for banner text */
+
+  /* Move the text down a bit */
+  line-height: 2.2; /* Increases space above and below the text */
+}
+
+/* Style for the image in the top banner */
+.banner-img {
+  height: 64px;        /* Make the image a little bit bigger */
+  float: right;
+  margin-right: 24px;
+  margin-left: 16px;
+  margin-top: -5px;
+  border-radius: 0 0 0 0; /* All corners sharp */
+  /* For beginners: you can adjust height or margins as needed */
+}
+
+/* Container for headline and water image */
+.water-hero {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Headline text over the water image, split into two lines */
+.water-headline {
+  position: absolute;
+  top: 30px;
+  left: 30%;
+  color: #FFF7E1;
+  font-size: 6vw;           /* Make the text much bigger and responsive */
+  font-weight: bold;
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  text-shadow: none;
+  z-index: 2;
+  text-align: left;
+  width: 68%;               /* Make the text area wider */
+  transform: translateX(0);
+  line-height: 1.1;
+}
+
+/* Water image styling: original spot, touching the banner */
+.water-img {
+  display: block;
+  margin-top: 0;
+  margin-left: 0;
+  width: calc(100% + 2in);      /* Add 1 inch to the right side */
+  max-width: calc(900px + 2in); /* Add 1 inch to the max width */
+  height: auto;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  /* Add 1 inch extra space at the bottom */
+  padding-bottom: 1in;
+}
+
+/* Text box under the headline, to the right of the water image */
+.water-textbox {
+  position: absolute;
+  top: 55%;                /* Place below the headline */
+  left: 65%;               /* To the right of the image */
+  background: #FFF7E1;     /* Requested background color */
+  border-radius: 18px;     /* Rounded corners */
+  padding: 32px 36px;      /* Space inside the box */
+  min-width: 260px;        /* Minimum width for the box */
+  max-width: 350px;        /* Maximum width for the box */
+  color: #222;             /* Dark text for readability */
+  font-size: 1.2em;        /* Slightly larger text */
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow for depth */
+  z-index: 3;              /* Make sure it is above the image */
 }
 
 /* 
