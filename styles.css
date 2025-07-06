@@ -219,6 +219,20 @@ section {
   z-index: 3;              /* Make sure it is above the image */
 }
 
+/* Message bar at the bottom of the page */
+.bottom-message {
+  width: 100%;                  /* Stretch across the page */
+  background: #FFF7E1;          /* Light background for visibility */
+  color: #222;                  /* Dark text for readability */
+  font-size: 1.2em;             /* Slightly larger text */
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  text-align: center;           /* Center the text */
+  padding: 32px 16px 32px 16px; /* Space above and below the text */
+  box-sizing: border-box;       /* Include padding in width */
+  margin-top: 48px;             /* Space above the bar */
+  border-radius: 18px 18px 0 0; /* Rounded top corners */
+}
+
 /* 
   Media Queries for Responsive Design
   Media queries help make your website look good on different screen sizes,
