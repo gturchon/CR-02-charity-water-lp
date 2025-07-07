@@ -126,7 +126,7 @@ section {
 
 /* Add a simple white banner at the top of the page */
 .top-banner {
-  background: #fff;
+  background: #FFF7E1; /* Changed from white to #FFF7E1 */
   width: 100%;
   padding: 10px 0;
   /* Align text to the left side */
@@ -201,22 +201,23 @@ section {
 /* Text box under the headline, to the right of the water image */
 .water-textbox {
   position: absolute;
-  /* Move the box up by 2 inches */
+  /* Move the box up by 2 inches, and bring the bottom up by half an inch */
   top: calc(55% - 2in);
   left: 65%;
-  background: #FFF7E1;     /* Requested background color */
-  border-radius: 18px;     /* Rounded corners */
-  /* Make the box 10% bigger by increasing padding and max-width */
-  padding: 35.2px 39.6px;      /* 10% more than 32px 36px */
-  padding-top: 220px;          /* 10% more than 200px */
-  padding-bottom: 165px;       /* 10% more than 150px */
-  min-width: 286px;            /* 10% more than 260px */
-  max-width: 385px;            /* 10% more than 350px */
-  color: #222;             /* Dark text for readability */
-  font-size: 1.2em;        /* Slightly larger text */
+  background: #FFF7E1;
+  border-radius: 18px;
+  padding: 35.2px 39.6px;
+  padding-top: 220px;
+  padding-bottom: 165px;
+  min-width: 286px;
+  max-width: 385px;
+  color: #222;
+  font-size: 1.2em;
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow for depth */
-  z-index: 3;              /* Make sure it is above the image */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  z-index: 3;
+  /* Remove bottom offset so the box ends at the same level as the image */
+  bottom: 0;
 }
 
 /* Message bar at the bottom of the page */
